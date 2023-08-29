@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .heading {
@@ -44,6 +45,7 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
+  cursor: pointer;
 }
 
 .btn {
@@ -56,29 +58,67 @@
 
 .heading2 {
   text-align: center;
+  margin-bottom: 60px;
   margin-top: 70px;
 }
 
 .flex_container {
   display: flex;
+  justify-content: center;
   /* border: 1px solid blue; */
-  gap: 20px;
-  width: 700px;
-  /* height: 200px; */
-  margin-top: 40px;
+  gap: 30px;
   font-size: bolder;
-  justify-content: space-between;
-  margin: 20px 60px;
-  /* max-width: 500px; */
-  padding: 60px 60px;
-  /* line-height: 20px; */
+  width: fit-content;
+  padding: 20px 20px;
+  text-overflow: none;
 }
 
-.Title .text_btn_container {
+.flex_container > .Title {
+  box-shadow: 30px 28px;
+}
+
+.Title > .text_btn_container {
   display: flex;
-  /* flex-direction: start; */
-  justify-content: center;
   /* border: 1px solid red; */
-  gap: 65px;
   justify-content: space-between;
+  /* align-items: center; */
+}
+
+.Title > .time_period {
+  /* border: 1px solid black */
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.Title > .start {
+  color: rgb(45, 167, 195);
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.Title > .text_btn_container > .BTTN {
+  border: 1px solid red;
+  padding: 15px 20px;
+  border-radius: 6px 7px;
+  color: rgb(237, 3, 49);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.flex_para_container > .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 40px 0;
+  font-size: 20px;
+}
+
+.flex_para_container > .ul > .li {
+  text-transform: none;
+  margin: 20px 0;
+  padding: 40px 0;
+  gap: 20px;
+  border: 2px solid red;
 }
