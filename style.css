@@ -48,11 +48,15 @@
   cursor: pointer;
 }
 
+.btn_container > .btn {
+  cursor: pointer;
+}
+
 .btn {
-  padding: 10px 30px;
+  padding: 10px 15px;
   color: black;
   border: none;
-  border-radius: 10px 12px;
+  border-radius: 8px 9px;
   border: 0.5px solid black;
 }
 
@@ -64,13 +68,13 @@
 
 .flex_container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   /* border: 1px solid blue; */
   gap: 30px;
   font-size: bolder;
-  width: fit-content;
-  padding: 20px 20px;
   text-overflow: none;
+  max-width: 500px;
+  /* max-width: fit-content; */
 }
 
 .flex_container > .Title {
@@ -107,18 +111,16 @@
   cursor: pointer;
 }
 
-.flex_para_container > .list {
+.flex_para_container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 40px 0;
   font-size: 20px;
+  margin: 20px;
+  /* border: 2px solid red; */
 }
 
-.flex_para_container > .ul > .li {
-  text-transform: none;
-  margin: 20px 0;
-  padding: 40px 0;
-  gap: 20px;
-  border: 2px solid red;
+.ul > .li {
+  margin: 40px 0;
+  border: 1px solid green;
 }
