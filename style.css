@@ -10,6 +10,7 @@
   font-weight: 900;
   font-size: 30px;
   font-size: bolder;
+  margin: 100px 40px;
 }
 
 .para {
@@ -60,12 +61,6 @@
   border: 0.5px solid black;
 }
 
-.heading2 {
-  text-align: center;
-  margin-bottom: 60px;
-  margin-top: 70px;
-}
-
 .flex_container {
   display: flex;
   justify-content: space-between;
@@ -73,36 +68,70 @@
   gap: 30px;
   font-size: bolder;
   text-overflow: none;
-  max-width: 500px;
+  width: 90%;
+  margin: auto;
+  /* max-width: 500px; */
   /* max-width: fit-content; */
 }
 
-.flex_container > .Title {
-  box-shadow: 30px 28px;
+.tutorials_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-justify: center;
+  /* border: 2px solid blue; */
 }
 
-.Title > .text_btn_container {
+.box {
+  width: 30%;
+  margin: auto;
+  /* border: 4px solid brown; */
+  padding: 10px 15px;
+}
+
+.images_div {
+  width: 100%;
+  /* border: 1px solid red; */
+  /* margin: auto; */
+}
+
+.images_div > img {
+  width: 100%;
+  margin: auto;
+}
+
+.content {
+  /* border: 2px solid blueviolet; */
+  /* display: flex; */
+  margin: 10px 7px;
+  padding: 50px 25px;
+}
+
+.content > .text_btn_container {
   display: flex;
   /* border: 1px solid red; */
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
+  font-size: 11px;
+  color: rgb(68, 73, 83);
 }
 
-.Title > .time_period {
+.content > .time_period {
   /* border: 1px solid black */
   display: flex;
   justify-content: space-between;
   font-size: 18px;
   font-weight: 300;
+  margin: 20px 10px;
 }
 
-.Title > .start {
+.content > .start {
   color: rgb(45, 167, 195);
   font-size: 13px;
   margin-left: 10px;
 }
 
-.Title > .text_btn_container > .BTTN {
+.content > .text_btn_container > .BTTN {
   border: 1px solid red;
   padding: 15px 20px;
   border-radius: 6px 7px;
@@ -111,16 +140,16 @@
   cursor: pointer;
 }
 
-.flex_para_container {
+.list {
+  list-style-type: none;
+  border: 2px solid yellowgreen;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-size: 20px;
-  margin: 20px;
-  /* border: 2px solid red; */
+  align-items: center;
+  justify-content: first baseline;
 }
 
-.ul > .li {
+.ul,
+.li {
   margin: 40px 0;
-  border: 1px solid green;
+  border: 2px solid yellow;
 }
